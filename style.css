@@ -1,0 +1,387 @@
+.barraLateral {
+    width: 18%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(46, 44, 44);;
+    border-right: black solid 2px;
+}
+
+.fotoPerfil {
+    width: 60%;
+    height: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.fotoPerfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.nome {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    margin-top: -7%;
+}
+
+.tituloNome {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 100%; 
+    font-style: italic;   
+    font-family: "quicksand", sans-serif;
+    margin-top: -6%;
+
+}
+
+.bemvindo {
+    width: auto; 
+    height: auto; 
+    margin-top: -5%;
+    overflow: hidden;
+    margin-left: 18%;
+}
+
+.bemvindo img {
+    margin-top: -5%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fundoBemVindo {
+    filter: brightness(0.4); /* escurece a imagem para 40% do original */
+}
+
+.msgBemVindo { /* Caixa completa msgs Bem Vindos Inicial */
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;;
+}
+
+.msgbem { /* Estilo o Escrito "Boas Vindas" */
+    font-size: 450%;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.descbemvindo { /* Estilo o Escrito "Descrição Boas Vindas" */
+    font-size: 300%;
+    font-family: oswald, sans-serif;
+}
+
+html, body { 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* bloqueia rolagem horizontal */
+}
+
+.descricao{
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    background-color: rgb(46, 44, 44);
+    padding-top: 1%;
+    margin-top: -1%;
+}
+
+.menuItem{
+    width: 80%;
+    height: 20%;
+    color: white;
+    text-align: center;
+    line-height: 120%; /* centraliza verticalmente o texto */
+    font-size: 260%;
+    cursor: pointer;
+    margin-top: 15%;
+}
+
+.menuItem a.active {
+    color: #552b82;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.menu{
+    margin-top: 30%;
+    margin-left: 20%;
+    align-items: center;
+    font-family: "bebas neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.instaGit{
+    width: 60%;
+    text-align: center;
+    font-size: 120%;
+    margin-left: 18%;
+    margin-top: 65%;
+    font-family: "quicksand", sans-serif;
+}
+
+.meusProjetos{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(32, 30, 30);
+    padding: 20px;
+}
+
+.linha{
+    color:white;
+    font-size: 250%;
+    margin-left: 15%;
+    font-family: "bebas neue", sans-serif;
+}
+
+.textoSobreMim{
+    color: white;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-right: 15%;
+    margin-top: 30px;
+    text-align: justify;
+    font-family: "quicksand", sans-serif;
+    font-style: italic;
+}
+
+.containerLing{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+.linguagens{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #552b82;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.linguagens img {
+    margin-top: -5%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linguagens p {
+    font-family: "quicksand", sans-serif;
+    font-style: italic;
+}
+
+.containerProjetos{
+    background-color: rgb(32, 30, 30);
+    width: 76%;
+    height: auto;
+    margin-left: 350px;
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+.projetoweb{
+
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 200px;
+    background-color: #552b82;
+}
+
+.projetoweb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.abaContatos{
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background-color: rgb(46, 44, 44);
+    padding-top: 1%;
+}
+
+.contatos{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #552b82;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -5%;
+    
+}
+.contatos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contatos p {
+    font-family: "quicksand", sans-serif;
+    font-style: italic;
+    font-size: 130%;
+    margin-top: 5px;
+}
+
+.contatos h1 {
+    font-family: "quicksand", sans-serif;
+    font-style: italic;
+    color: rgb(151, 151, 151);
+    font-size: 80%;
+    margin-top: -15%;
+}
+
+.sobrePosicao{
+    display: none; /* Esconde a sobreposição inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    z-index: 999; /* Fica acima de outros elementos */
+}
+
+.sobrePosicao.ativo {
+    display: flex;
+}
+
+.widget {
+    background: rgb(32, 30, 30);
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+    height: 40%;
+    display: flex;
+    gap: 15px;
+    border: #552b82 solid 2px;
+}
+
+.widget button {
+    position:absolute;
+    top: 29%;
+    right: 27%;
+    background-color: #552b82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.widget button:hover {
+    background-color: #3f1f5c; /* Cor mais escura ao passar o mouse */
+}
+
+.widget img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.roletaWidget {
+    background-color: rgb(32, 30, 30);
+    width: 65%;
+    height: 95%;
+    position: relative;
+    padding: 1%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.roletaWidget-girando {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out  ;
+}
+
+.roletaWidget img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.infoWidget {
+    width: 30%;
+    height: 70%;
+    overflow: hidden;
+    border: #552b82 solid 2px;
+}
+
+.infoWidget h2 {
+    font-size: 150%;
+    color: white;
+    margin-top: 10px;
+    font-family: "bebas neue", sans-serif;
+}
+
+.infoWidget p {
+    font-size: 100%;
+    color: white;
+    margin: 10px;
+    font-family: "quicksand", sans-serif;
+    font-style: italic;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.conhecerSite{
+    width: 8%;
+    height: 3%;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 625px;
+    border: #552b82 solid 2px;
+}
+
+.conhecerSite p {
+    margin: 4px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+}
