@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // ===== ABRIR / FECHAR WIDGET =====
     const botoesAbrir = document.querySelectorAll(".abrirWidget");
     const botoesFechar = document.querySelectorAll(".fecharWidget");
 
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Carrossel (roleta) para todos os widgets
+// ===== ROLETA (carrossel para todos os projetos) =====
 document.addEventListener("DOMContentLoaded", () => {
     const roletas = document.querySelectorAll(".roletaWidget-girando");
 
@@ -34,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Scroll Spy (menu ativo)
+// ===== SCROLL SPY (menu ativo na barra lateral) =====
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("#inicio, #sobre, #projetos, #contato");
     const navLinks = document.querySelectorAll(".menuItem a");
@@ -64,4 +65,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
