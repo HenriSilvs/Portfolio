@@ -18,21 +18,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", () =>{
-    const roletasGirando = document.querySelectorAll('.roletaWidget-girando');
+document.addEventListener("DOMContentLoaded", () => {
+    const roletas = document.querySelectorAll(".roletaWidget-girando");
 
-    roletasGirando.forEach(roleta => {
+    roletas.forEach(roleta => {
         let indice = 0;
 
-    setInterval(() => {
-        indice++;
-        if (indice >= roletaGirando.children.length) {
-            indice = 0;
-        }
-        roletaGirando.style.transform = `translateX(-${indice * 100}%)`;
-    }, 2500); // muda a imagem a cada 2.5 segundos
+        setInterval(() => {
+            indice++;
+            if (indice >= roleta.children.length) {
+                indice = 0;
+            }
+            roleta.style.transform = `translateX(-${indice * 100}%)`;
+        }, 2500); // muda a imagem a cada 2.5 segundos
+    });
+});
 
-}); 
 
 document.addEventListener("DOMContentLoaded", () => {
     const secao = document.querySelectorAll("#inicio, #sobre, #projetos, #contato");
@@ -57,4 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
