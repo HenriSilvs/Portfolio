@@ -24,16 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     roletas.forEach(roleta => {
         let indice = 0;
+        const imagens = roleta.querySelectorAll("img");
 
         setInterval(() => {
-            indice++;
-            if (indice >= roleta.children.length) {
-                indice = 0;
-            }
+            indice = (indice + 1) % imagens.length;
             roleta.style.transform = `translateX(-${indice * 100}%)`;
-        }, 2500); // muda a imagem a cada 2.5 segundos
+        }, 2500);
     });
 });
+
 
 // ===== SCROLL SPY (menu ativo na barra lateral) =====
 document.addEventListener("DOMContentLoaded", () => {
@@ -65,3 +64,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
