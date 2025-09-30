@@ -45,10 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 150;
             const sectionHeight = section.clientHeight;
+
             if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
                 current = section.getAttribute("id");
             }
         });
+
+        // Garante que "contato" fique ativo ao chegar no rodapé
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            current = "contato";
+        }
 
         navLinks.forEach(link => {
             link.classList.remove("active");
@@ -58,3 +64,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
