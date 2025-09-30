@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+// Carrossel (roleta) para todos os widgets
 document.addEventListener("DOMContentLoaded", () => {
     const roletas = document.querySelectorAll(".roletaWidget-girando");
 
@@ -34,19 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+// Scroll Spy (menu ativo)
 document.addEventListener("DOMContentLoaded", () => {
-    const secao = document.querySelectorAll("#inicio, #sobre, #projetos, #contato");
+    const sections = document.querySelectorAll("#inicio, #sobre, #projetos, #contato");
     const navLinks = document.querySelectorAll(".menuItem a");
 
     window.addEventListener("scroll", () => {
         let current = "";
 
-        sections.forEach(secao => {
-            const secaoTop = secao.offsetTop - 150; 
-            const secaoHeight = secao.clientHeight;
-            if (pageYOffset >= secaoTop && pageYOffset < secaoTop + secaoHeight) {
-                current = secao.getAttribute("id");
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                current = section.getAttribute("id");
             }
         });
 
@@ -58,5 +58,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-
