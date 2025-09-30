@@ -19,8 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", () =>{
-    const roletaGirando = document.querySelector('.roletaWidget-girando');
-    let indice = 0;
+    const roletasGirando = document.querySelectorAll('.roletaWidget-girando');
+
+    roletasGirando.forEach(roleta => {
+        let indice = 0;
 
     setInterval(() => {
         indice++;
@@ -33,16 +35,16 @@ document.addEventListener("DOMContentLoaded", () =>{
 }); 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("#inicio, #sobre, #projetos, #contato");
+    const secao = document.querySelectorAll("#inicio, #sobre, #projetos, #contato");
     const navLinks = document.querySelectorAll(".menuItem a");
 
     window.addEventListener("scroll", () => {
         let current = "";
 
-        sections.forEach(section => {
+        sections.forEach(secao => {
             const secaoTop = secao.offsetTop - 150; 
             const secaoHeight = secao.clientHeight;
-            if (pageYOffset >= sectionTop && pageYOffset < secaoTop + secaoHeight) {
+            if (pageYOffset >= secaoTop && pageYOffset < secaoTop + secaoHeight) {
                 current = secao.getAttribute("id");
             }
         });
@@ -55,3 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
